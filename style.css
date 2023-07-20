@@ -105,7 +105,7 @@ main {
   font-weight: bold;
 }
 
-.info-apresentation {
+.info-presentation {
   color: #c7c7c7;
   line-height: 2rem;
   letter-spacing: 0.1rem;
@@ -126,6 +126,85 @@ main {
   background-color: #0066ff;
   color: #fff;
   transition: 0.6s;
+}
+
+.container-experiences {
+  display: block;
+  max-width: 100%;
+
+  margin-top: 10rem;
+  padding: 6rem;
+  background-color: #1b1b1b;
+}
+
+.experiences {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 6rem 2rem;
+  background-color: #1b1b1b;
+
+  color: #fff;
+}
+
+.companies {
+  background-color: #111;
+  padding: 3rem;
+  border-radius: 0.5rem;
+}
+
+.companies h1 {
+  font-size: 4rem;
+  position: relative;
+}
+
+.companies h1::before {
+  content: "";
+  position: absolute;
+  background: #0066ff;
+  width: 5rem;
+  height: 0.5rem;
+  top: 4.5rem;
+}
+
+.companies ul {
+  margin-top: 4rem;
+}
+
+.companies ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5rem;
+  font-weight: 500;
+  color: #c7c7c7;
+}
+
+.companies-info {
+  width: 60%;
+
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.period {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.period > p {
+  color: #0066ff;
+  font-weight: 500;
+}
+
+.companies-info-tittle > P {
+  color: #c7c7c7;
+  line-height: 2.2rem;
+  letter-spacing: 0.1rem;
 }
 
 @media (min-width: 1200px) {
@@ -198,7 +277,7 @@ main {
       margin-bottom: 0.5rem;
       font-size: 1.2rem;
     }
-    .info-apresentation p {
+    .info-presentation p {
       font-size: 1.4rem;
     }
   }
