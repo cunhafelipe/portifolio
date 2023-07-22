@@ -205,17 +205,19 @@ main {
   max-width: 100%;
   margin-top: 3rem;
   padding: 6rem;
+  padding-bottom: 200px;
 }
 
 .projects {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
   color: #fff;
   padding: 0rem 2rem;
   gap: 2rem;
+  margin-top: 1rem;
 }
 
 .tittle-project {
@@ -235,6 +237,60 @@ main {
 .project h1 {
   font-size: 3rem;
   color: #0066ff;
+}
+
+.knowledge {
+  background-color: #1b1b1b;
+  padding-top: 9rem;
+}
+
+.container-knowledge {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 6rem;
+  padding-bottom: 150px;
+  display: flex;
+  background-color: #1b1b1b;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.container-knowledge h1 {
+  font-size: 4rem;
+  color: #fff;
+  position: relative;
+}
+
+.container-knowledge h1::before {
+  content: "";
+  position: absolute;
+  background: #0066ff;
+  width: 5rem;
+  height: 0.5rem;
+  top: 4.5rem;
+}
+
+.container-knowledge p {
+  max-width: 700px;
+  margin-top: 3rem;
+  color: #c7c7c7;
+  line-height: 2.5rem;
+  letter-spacing: 0.2rem;
+}
+
+.knowledge-technologies {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.knowledge-technologies div {
+  background-color: #1d1d1d;
+  padding: 2rem;
+  border-radius: 50%;
+  margin-bottom: 5rem;
 }
 
 @media (max-width: 1200px) {
