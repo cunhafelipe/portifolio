@@ -129,9 +129,7 @@ main {
 }
 
 .container-experiences {
-  display: block;
   max-width: 100%;
-
   margin-top: 10rem;
   padding: 6rem;
   background-color: #1b1b1b;
@@ -143,8 +141,6 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   padding: 6rem 2rem;
-  background-color: #1b1b1b;
-
   color: #fff;
 }
 
@@ -182,8 +178,6 @@ main {
 
 .companies-info {
   width: 60%;
-
-  padding: 3rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -207,13 +201,46 @@ main {
   letter-spacing: 0.1rem;
 }
 
-@media (min-width: 1200px) {
-  .image img {
-    width: 300rem;
-  }
+.container-projects {
+  max-width: 100%;
+  margin-top: 3rem;
+  padding: 6rem;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #fff;
+  padding: 0rem 2rem;
+  gap: 2rem;
+}
+
+.tittle-project {
+  text-align: center;
+  font-size: 4rem;
+  position: relative;
+  color: #fff;
+}
+
+.project {
+  padding: 9rem;
+  background-color: #1b1b1b;
+  border-radius: 0.5rem;
+  margin-top: 2.5rem;
+}
+
+.project h1 {
+  font-size: 3rem;
+  color: #0066ff;
 }
 
 @media (max-width: 1200px) {
+  .image img {
+    width: 300rem;
+  }
   .sobre {
     flex-direction: column;
   }
@@ -222,6 +249,23 @@ main {
     width: 60%;
     align-items: center;
     justify-content: center;
+  }
+
+  @media (max-width: 1000px) {
+    .experiences {
+      flex-direction: column;
+      align-items: center;
+    }
+    .companies {
+      padding: 1rem 3rem;
+    }
+    .companies-info {
+      width: 100%;
+      margin-top: 4rem;
+    }
+    .projects {
+      flex-direction: column;
+    }
   }
 
   .image img {
@@ -239,36 +283,52 @@ main {
   }
 
   @media (max-width: 500px) {
-    .info-name h1 {
+    /* .info-name h1 {
       font-size: 3.2rem;
     }
     .info-name h2 {
       font-size: 2rem;
-    }
+    } */
     .info-name > p {
       margin-bottom: 0.5rem;
-      font-size: 1.6rem;
+      /* font-size: 1.6rem; */
+    }
+    .period {
+      flex-direction: column;
+    }
+    .period p {
+      margin-top: 1rem;
     }
   }
   @media (max-width: 450px) {
     .info-name h1 {
-      font-size: 2.5rem;
+      font-size: 3rem;
     }
     .info-name h2 {
       font-size: 2rem;
     }
-    .info-name > p {
+    */ .info-name > p {
       margin-bottom: 0.5rem;
       font-size: 1.6rem;
     }
     header img {
       width: 150px;
     }
+
+    .companies h1 {
+      font-size: 3rem;
+    }
+    .tittle-project {
+      font-size: 3rem;
+    }
+    .projects h1 {
+      font-size: 2rem;
+    }
   }
 
-  @media (max-width: 300px) {
+  @media (max-width: 330px) {
     .info-name h1 {
-      font-size: 2rem;
+      font-size: 2.5rem;
     }
     .info-name h2 {
       font-size: 1.6rem;
@@ -279,6 +339,15 @@ main {
     }
     .info-presentation p {
       font-size: 1.4rem;
+    }
+    .companies h1 {
+      font-size: 2.5rem;
+    }
+    .tittle-project {
+      font-size: 2.5rem;
+    }
+    .projects h1 {
+      font-size: 2rem;
     }
   }
 }
