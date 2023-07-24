@@ -387,6 +387,21 @@ button:hover {
   transition: 0.5s;
 }
 
+footer {
+  width: 100%;
+  background-color: #1b1b1b;
+  padding: 3.5rem;
+  text-align: center;
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+footer span {
+  color: #0056b3;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
 @media (max-width: 1200px) {
   .image img {
     width: 300rem;
@@ -534,6 +549,12 @@ button:hover {
     }
     .projects h1 {
       font-size: 2rem;
+    }
+    footer {
+      font-size: 1.6rem;
+    }
+    footer span {
+      font-size: 1.6rem;
     }
   }
 }
