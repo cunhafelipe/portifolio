@@ -241,14 +241,14 @@ main {
 
 .knowledge {
   background-color: #1b1b1b;
-  padding-top: 9rem;
+  padding-top: 6rem;
 }
 
 .container-knowledge {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 6rem;
-  padding-bottom: 150px;
+  padding: 0 2rem;
+  padding-bottom: 100px;
   display: flex;
   background-color: #1b1b1b;
   justify-content: space-between;
@@ -296,6 +296,94 @@ main {
 .knowledge-technologies div:hover {
   cursor: pointer;
   border: 1px solid #0066ff;
+}
+
+.container-contact {
+  width: 100%;
+  margin-top: 10rem;
+}
+
+.contact {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.contact-icons {
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.contact-icons div {
+  background-color: #1d1d1d;
+  padding: 2rem;
+  border-radius: 50%;
+  margin-bottom: 5rem;
+}
+
+.contact-icons div:hover {
+  cursor: pointer;
+  border: 1px solid #0056b3;
+}
+
+form {
+  width: 400px;
+  background-color: #1b1b1b;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #ccc;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+textarea:focus,
+input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+input {
+  border: 1px solid #0056b3;
+}
+
+textarea {
+  resize: vertical;
+  border: 1px solid #0056b3;
+}
+button {
+  background-color: #fff;
+  color: #0056b3;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+  color: #fff;
+  transition: 0.5s;
 }
 
 @media (max-width: 1200px) {
