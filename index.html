@@ -14,20 +14,24 @@
 </head>
 
 <body>
-  <header>
-    <img src="./assets/devcunhaLogo.svg" alt="" width="200px">
-    <nav>
-      <ul>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Experiências</a></li>
-        <li><a href="#">Projetos</a></li>
-        <li><a href="#">Conhecimentos</a></li>
-        <li><a href="#">Contato</a></li>
+  <header id="header">
+    <img src="./assets/devcunhaLogo.svg" alt="" width="200px" id="logo">
+    <nav id="nav">
+      <button aria-label="Abrir Menu" id="btn-mobile" aria-expanded="false" aria-controls="menu" aria-haspopup="true">
+        <span id="hamburguer"></span>
+      </button>
+
+      <ul id="menu" role="menu">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#experiences">Experiências</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#knowledge">Conhecimentos</a></li>
+        <li><a href="#contact">Contato</a></li>
       </ul>
     </nav>
   </header>
 
-  <main class="container">
+  <main class="container" id="sobre">
     <section class="sobre">
       <div class="image">
         <img src="./assets/programing.svg" alt="Ilustração cartoon devcunha" width="3000px">
@@ -48,7 +52,7 @@
     </section>
   </main>
 
-  <section class="container-experiences">
+  <section class="container-experiences" id="experiences">
     <section class="experiences">
       <section class="companies">
         <h1>Experiências</h1>
@@ -58,7 +62,7 @@
           <li>Torreson</li>
         </ul>
       </section>
-      <section class="companies-info">
+      <section class="companies-info" id="companies">
         <section class="companies-info-tittle">
           <div class="period">
             <h2>Estágio</h2>
@@ -86,7 +90,7 @@
     </section>
   </section>
 
-  <section class="container-projects">
+  <section class="container-projects" id="projects">
     <h1 class="tittle-project">Projetos</h1>
     <section class="projects">
       <section class="project">
@@ -101,7 +105,7 @@
     </section>
   </section>
 
-  <section class="knowledge">
+  <section class="knowledge" id="knowledge">
     <section class="container-knowledge">
       <section class="knowledge-info">
         <h1>Conhecimentos</h1>
@@ -120,7 +124,7 @@
     </section>
   </section>
 
-  <section class="container-contact">
+  <section class="container-contact" id="contact">
     <section class="contact">
       <section class="contact-form">
         <form action="enviar_email.php" method="post">
@@ -133,7 +137,7 @@
           <label for="mensagem">Mensagem:</label>
           <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
 
-          <button type="submit">Enviar Mensagem</button>
+          <button class="btn-form" type="submit">Enviar Mensagem</button>
         </form>
       </section>
       <section class="contact-icons">
@@ -148,7 +152,8 @@
     <p>Copyright © 2023 <span>Todos os direitos reservados.</span></p>
   </footer>
 
-
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script src="./script.js"></script>
 </body>
 
