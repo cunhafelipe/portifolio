@@ -293,6 +293,11 @@ main {
   margin-bottom: 5rem;
 }
 
+.knowledge-technologies div:hover {
+  cursor: pointer;
+  border: 1px solid #0066ff;
+}
+
 @media (max-width: 1200px) {
   .image img {
     width: 300rem;
@@ -306,6 +311,18 @@ main {
     align-items: center;
     justify-content: center;
   }
+  .knowledge-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+  .container-knowledge {
+    flex-direction: column;
+  }
+  .projects {
+    flex-direction: column;
+  }
 
   @media (max-width: 1000px) {
     .experiences {
@@ -318,9 +335,6 @@ main {
     .companies-info {
       width: 100%;
       margin-top: 4rem;
-    }
-    .projects {
-      flex-direction: column;
     }
   }
 
@@ -336,24 +350,34 @@ main {
     .image img {
       width: 50rem;
     }
+    .knowledge-info div {
+      display: none;
+    }
   }
 
   @media (max-width: 500px) {
-    /* .info-name h1 {
-      font-size: 3.2rem;
-    }
-    .info-name h2 {
-      font-size: 2rem;
-    } */
     .info-name > p {
       margin-bottom: 0.5rem;
-      /* font-size: 1.6rem; */
     }
     .period {
       flex-direction: column;
     }
     .period p {
       margin-top: 1rem;
+    }
+    .knowledge-technologies {
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    .knowledge-info h1 {
+      font-size: 2.5rem;
+    }
+
+    .knowledge-info h1::before {
+      background: #0066ff;
+      width: 5rem;
+      height: 0.5rem;
+      top: 3.5rem;
     }
   }
   @media (max-width: 450px) {
