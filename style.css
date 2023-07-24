@@ -199,6 +199,7 @@ main {
   color: #c7c7c7;
   line-height: 2.2rem;
   letter-spacing: 0.1rem;
+  text-align: center;
 }
 
 .container-projects {
@@ -411,6 +412,14 @@ button:hover {
   .projects {
     flex-direction: column;
   }
+  .contact {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-icons {
+    margin-top: 3rem;
+  }
 
   @media (max-width: 1000px) {
     .experiences {
@@ -467,6 +476,12 @@ button:hover {
       height: 0.5rem;
       top: 3.5rem;
     }
+    .knowledge-technologies img {
+      width: 40px;
+    }
+    .contact-icons img {
+      width: 40px;
+    }
   }
   @media (max-width: 450px) {
     .info-name h1 {
@@ -491,6 +506,9 @@ button:hover {
     }
     .projects h1 {
       font-size: 2rem;
+    }
+    form {
+      width: 100%;
     }
   }
 
