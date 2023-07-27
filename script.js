@@ -86,3 +86,24 @@ function initAnimationScroll() {
 }
 
 initAnimationScroll();
+
+function tabNavigation() {
+  const linkCompanies = document.querySelectorAll(".js-companies li");
+  const tabSection = document.querySelectorAll(".companies-info section");
+  tabSection[0].classList.add("ativo");
+
+  function altExperiences(index) {
+    tabSection.forEach((section) => {
+      section.classList.remove("ativo");
+    });
+    tabSection[index].classList.add("ativo");
+  }
+
+  linkCompanies.forEach((link, index) => {
+    link.addEventListener("click", () => {
+      altExperiences(index);
+    });
+  });
+}
+
+tabNavigation();
