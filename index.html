@@ -110,7 +110,7 @@
       <section class="knowledge-info">
         <h1>Conhecimentos</h1>
         <div>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, doloremque repudiandae delectus aspernatur dicta consequatur reprehenderit maxime modi sunt, omnis optio asperiores adipisci expedita. Reprehenderit facilis voluptatibus laboriosam omnis impedit.</p>
+          <p>Essas são as tecnologias que uso no momento*</p>
         </div>
       </section>
       <section class="knowledge-technologies">
@@ -127,17 +127,20 @@
   <section class="container-contact js-scroll" id="contact">
     <section class="contact">
       <section class="contact-form">
-        <form action="enviar_email.php" method="post">
+        <form action="https://api.staticforms.xyz/submit" method="post">
           <label for="nome">Nome:</label>
-          <input type="text" id="nome" name="nome" required>
+          <input type="text" name="name" required placeholder="Digite seu nome">
 
           <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
+          <input type="email" name="email" required placeholder="Digite seu e-mail">
 
           <label for="mensagem">Mensagem:</label>
-          <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+          <textarea name="message" rows="5" required placeholder="Escreva aqui sua mensagem..."></textarea>
 
           <button class="btn-form" type="submit">Enviar Mensagem</button>
+
+          <input type="hidden" name="accessKey" value="5c1617c3-ece2-4e49-a9c2-ae9642e81a88">
+          <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/agradecimento.html">
         </form>
       </section>
       <section class="contact-icons">
