@@ -673,3 +673,16 @@ footer span {
   opacity: 1;
   transform: translate3d(0px, 0px, 0px);
 }
+
+.companies-info section {
+  display: none;
+}
+
+.companies-info section.ativo {
+  display: block;
+  position: relative;
+}
+
+.js-companies li {
+  cursor: pointer;
+}
