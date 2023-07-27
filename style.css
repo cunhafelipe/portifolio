@@ -183,6 +183,7 @@ main {
   letter-spacing: 0.1rem;
   margin-top: 5rem;
   margin-bottom: 3rem;
+  font-size: 1.4rem;
 }
 
 .info a {
@@ -630,4 +631,45 @@ footer span {
       font-size: 1.6rem;
     }
   }
+}
+
+.active-img {
+  animation: show 0.7s forwards;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate3d(-40px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.active-info {
+  animation: showInfo 0.7s forwards;
+}
+
+@keyframes showInfo {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -40px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.js-scroll {
+  opacity: 0;
+  transform: translate3d(-30px, 0px, 0px);
+  transition: 0.3s;
+}
+
+.js-scroll.animar {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
 }
