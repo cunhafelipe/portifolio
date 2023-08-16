@@ -3,13 +3,16 @@
 
 <head>
 
+  <script src="./javascript/script.js" defer></script>
+
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/style.css">
   <title>devcunha</title>
 </head>
 
@@ -38,12 +41,12 @@
       </div>
       <section class="info active-info">
         <div class="info-name">
-          <h2>Olá, me chamo</h2>
-          <h1>Felipe Cunha</h1>
-          <p>Front end Developer</p>
+          <h2 class="font-subTittle">Olá, me chamo</h2>
+          <h1 class="font-tittle">Felipe Cunha</h1>
+          <h2 class="font-subTittle">Front end Developer</h2>
         </div>
         <div class="info-presentation">
-          <p>
+          <p class="font-paragraph">
             Sou um estudante de Análise e Desenvolvimento de Sistemas com dois anos de experiência na área de tecnologia. Atualmente, estou dedicando meus estudos ao desenvolvimento web, com ênfase no front end. Busco constantemente me manter atualizado sobre as últimas tendências e melhores práticas do desenvolvimento web, para entregar resultados que estejam alinhados com as expectativas dos clientes e superem suas necessidades.
           </p>
         </div>
@@ -55,7 +58,7 @@
   <section class="container-experiences js-scroll" id="experiences">
     <section class="experiences">
       <section class="companies">
-        <h1>Experiências</h1>
+        <h1 class="font-tittle">Experiências</h1>
         <ul class="js-companies">
           <li>Prefeitura Ribeirão Pires</li>
           <li>Sticle</li>
@@ -65,42 +68,42 @@
       <section class="companies-info" id="companies">
         <section class="companies-info-tittle">
           <div class="period">
-            <h2>Estágio</h2>
-            <p>Jan 2022 - Jul 2022 (6 meses)</p>
+            <h2 class="font-subTittle">Estágio</h2>
+            <p class="font-paragraph paragraph-bold">Jan 2022 - Jul 2022 (6 meses)</p>
           </div>
-          <p>Responsável pela manutenção e configuração de toda rede de computadores e impressoras da rede pública, infraestrutura e instalação de novos pontos. Manutenção dos servidores e câmeras de segurança utilizando DVR.
+          <p class="font-paragraph">Responsável pela manutenção e configuração de toda rede de computadores e impressoras da rede pública, infraestrutura e instalação de novos pontos. Manutenção dos servidores e câmeras de segurança utilizando DVR.
           </p>
         </section>
         <section class="companies-info-tittle">
           <div class="period">
-            <h2>Estágio</h2>
-            <p>Jul 2022 - Atualmente</p>
+            <h2 class="font-subTittle">Estágio</h2>
+            <p class="font-paragraph paragraph-bold">Jul 2022 - Atualmente</p>
           </div>
-          <p>Gerar e analisar relatórios diários da produção, verificação semanal dos Backups da empresa, verificação diária dos servidores via MSTSC, manutenção e configuração de Hardware, suporte ao usuário, suporte ao site da empresa (quando necessário).
+          <p class="font-paragraph">Gerar e analisar relatórios diários da produção, verificação semanal dos Backups da empresa, verificação diária dos servidores via MSTSC, manutenção e configuração de Hardware, suporte ao usuário, suporte ao site da empresa (quando necessário).
           </p>
         </section>
         <section class="companies-info-tittle">
           <div class="period">
-            <h2>Estágio desenvolvedor Front end</h2>
-            <p>Fev 2023 - Atualmente</p>
+            <h2 class="font-subTittle">Desenvolvedor Front end</h2>
+            <p class="font-paragraph paragraph-bold">Fev 2023 - Atualmente</p>
           </div>
-          <p>Desenvolvimento Front end do projeto, melhoria de layout, refatoração do código.</p>
+          <p class="font-paragraph">Desenvolvimento Front end do projeto, melhoria de layout, refatoração do código.</p>
         </section>
       </section>
     </section>
   </section>
 
   <section class="container-projects js-scroll" id="projects">
-    <h1 class="tittle-project">Projetos</h1>
+    <h1 class="tittle-project font-tittle">Projetos</h1>
     <section class="projects">
       <section class="project">
-        <h1>Loading...</h1>
+        <h1 class="font-tittle">Loading...</h1>
       </section>
       <section class="project">
-        <h1>Loading...</h1>
+        <h1 class="font-tittle">Loading...</h1>
       </section>
       <section class="project">
-        <h1>Loading...</h1>
+        <h1 class="font-tittle">Loading...</h1>
       </section>
     </section>
   </section>
@@ -108,9 +111,9 @@
   <section class="knowledge js-scroll" id="knowledge">
     <section class="container-knowledge">
       <section class="knowledge-info">
-        <h1>Conhecimentos</h1>
+        <h1 class="font-tittle">Conhecimentos</h1>
         <div>
-          <p>Essas são as tecnologias que uso no momento*</p>
+          <p class="font-paragraph paragraph-bold">Essas são as tecnologias que uso no momento*</p>
         </div>
       </section>
       <section class="knowledge-technologies">
@@ -140,9 +143,10 @@
           <button class="btn-form" type="submit">Enviar Mensagem</button>
 
           <input type="hidden" name="accessKey" value="5c1617c3-ece2-4e49-a9c2-ae9642e81a88">
-          <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/agradecimento.html">
+          <input type="hidden" name="redirectTo" value="https://devcunha.netlify.app/agradecimento.html">
         </form>
       </section>
+
       <section class="contact-icons">
         <div><a href="https://www.linkedin.com/in/felipesilvacunha/" target="_blank"><img src="./assets/icons/linkedin.png" alt="icone HTML" width="64px"></div></a>
         <div><a href="https://github.com/cunhafelipe" target="_blank"><img src="./assets/icons/github.png" alt="icone CSS" width="64px"></div></a>
@@ -152,12 +156,11 @@
   </section>
 
   <footer>
-    <p>Copyright © 2023 <span>Todos os direitos reservados.</span></p>
+    <p class="font-paragraph">Copyright © 2023 <span class="font-paragraph">Todos os direitos reservados.</span></p>
   </footer>
 
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  <script src="./script.js"></script>
 </body>
 
 </html>
