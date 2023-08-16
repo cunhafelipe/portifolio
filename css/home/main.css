@@ -1,0 +1,133 @@
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0rem 2rem;
+}
+
+.sobre {
+  display: flex;
+  gap: 3rem;
+  background-color: var(--color-bg-section);
+  padding: 3rem 5rem;
+  margin-top: 7rem;
+  border-radius: 1rem;
+  border: 1px solid #202020;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-name {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.info-name h2 {
+  color: var(--color-font);
+}
+
+.info-name h1 {
+  color: var(--color-font-tittle);
+}
+
+.info-name > h2 {
+  color: var(--color-font);
+}
+
+.info-presentation {
+  color: var(--color-font-text);
+  line-height: 2rem;
+  letter-spacing: 0.1rem;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+.info a {
+  display: inline-block;
+  color: var(--color-font);
+  background-color: var(--color-font-tittle);
+  padding: 1rem 3.5rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+}
+
+.info a:hover {
+  background-color: var(--color-font);
+  color: var(--color-font-tittle);
+  transition: 0.6s;
+}
+
+@media (max-width: 1200px) {
+  .sobre {
+    flex-direction: column;
+  }
+  .image img {
+    width: 300rem;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: url(../../assets/programing.svg);
+  }
+  .image {
+    display: flex;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1000px) {
+  .image img {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: url(../../assets/programing.svg);
+  }
+}
+
+@media (max-width: 760px) {
+  .image img {
+    width: 50rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .info-name > p {
+    margin-bottom: 0.5rem;
+  }
+  header img {
+    width: 150px;
+  }
+}
+
+.active-img {
+  animation: show 0.7s forwards;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate3d(-40px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.active-info {
+  animation: showInfo 0.7s forwards;
+}
+
+@keyframes showInfo {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -40px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}

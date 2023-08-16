@@ -1,0 +1,14 @@
+footer {
+  width: 100%;
+  background-color: var(--color-bg-section);
+  padding: 3.5rem;
+  text-align: center;
+  color: var(--color-font-tittle);
+  font-size: 1.8rem;
+}
+
+footer span {
+  color: var(--color-dark-blue);
+  font-weight: bold;
+  font-size: 2rem;
+}

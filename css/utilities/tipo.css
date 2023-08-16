@@ -1,0 +1,33 @@
+.font-tittle {
+  font-size: 4rem;
+}
+
+.font-subTittle {
+  font-size: 2rem;
+}
+
+.font-paragraph {
+  font-size: 1.3rem;
+}
+
+.paragraph-bold {
+  font-weight: 500;
+}
+
+@media (max-width: 500px) {
+  .font-tittle {
+    font-size: 3rem;
+  }
+  .font-subTittle {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .font-tittle {
+    font-size: 2.5rem;
+  }
+  .font-subTittle {
+    font-size: 1.6rem;
+  }
+}

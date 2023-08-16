@@ -1,0 +1,18 @@
+/* Global */
+@import url(./global/global.css);
+@import url(./global/header.css);
+@import url(./global/footer.css);
+@import url(./global/menuMobile.css);
+
+/* Home */
+@import url(./home/main.css);
+@import url(./home/experiences.css);
+@import url(./home/projects.css);
+@import url(./home/knowledge.css);
+@import url(./home/contact.css);
+
+/* Utilities */
+@import url(./utilities/form.css);
+@import url(./utilities/color.css);
+@import url(./utilities/tipo.css);
+@import url(./utilities/js.css);

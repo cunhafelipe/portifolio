@@ -1,0 +1,22 @@
+header {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 2rem;
+  margin-top: 2rem;
+}
+
+header ul {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+header a {
+  color: var(--color-font-text);
+  position: relative;
+  display: block;
+  padding: 0.5rem;
+}
